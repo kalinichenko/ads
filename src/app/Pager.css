@@ -1,0 +1,24 @@
+
+.pager {
+  display: flex;
+  margin: 12px;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.page {
+  background-color: #ffffff;
+  padding: 12px;
+  text-decoration:none;
+}
+
+.disabledPage {
+  composes: page;
+  pointer-events: none;
+  cursor: default;
+  color: #a9a9a9;
+}
+
+.page + .page {
+  margin-left: 12px;
+}

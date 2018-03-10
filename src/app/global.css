@@ -1,0 +1,15 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+:global #root {
+  min-height: 100%;
+  height: auto;
+  margin: -50px auto 0;
+  background-color: #d3d3d3;
+}

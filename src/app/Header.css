@@ -1,0 +1,12 @@
+.header {
+  background-color: #d3d3d3;
+  padding: 62px 12px 12px;
+}
+
+.logo {
+  display: block;
+  height: 70px;
+  width: 70px;
+  background: url(https://www.olx.ua/static/olxua/packed/font/2f4f22766be42e5eac379976b5237b92ca.svg) no-repeat;
+  background-size: 100%;
+}
