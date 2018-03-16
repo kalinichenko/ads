@@ -36,12 +36,12 @@ export default class Ads extends React.Component {
       } = data;
 
       return (
-        <section className={styles.ads}>
+        <div className={styles.ads}>
           <div className={styles.grid}>
             {ads.map(ad => <Ad key={ad.id} {...ad}/>)}
           </div>
           <Pager page={page} total={totalPage} />
-        </section>
+        </div>
       );
     }
     return <span>Loading...</span>;

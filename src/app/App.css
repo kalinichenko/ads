@@ -6,7 +6,11 @@
   width: 890px;
 }
 
-
+.adSection {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
 
 @media (max-width: 992px) {
   .pageContent {
@@ -18,4 +22,24 @@
   .pageContent {
     width: 100%;
   }
+}
+
+:global .fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+:global .fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 250ms ease-in;
+}
+
+:global .fade-exit {
+  opacity: 1;
+  z-index: 0;
+}
+
+:global .fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 250ms ease-out;
 }
